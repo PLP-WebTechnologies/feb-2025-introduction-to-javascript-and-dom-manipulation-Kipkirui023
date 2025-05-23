@@ -3,35 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Manipulation Exercise</title>
+    <title>Interactive DOM Playground</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="main-heading">DOM Manipulation Demo</h1>
+        <h1 id="main-heading">Interactive DOM Playground</h1>
     </header>
     
     <main>
         <section class="content-section">
-            <p id="changeable-text">This text will change when you click the button below.</p>
-            <button id="text-changer">Change Text</button>
-        </section>
-        
-        <section class="content-section">
-            <div id="style-demo" class="box">This box will change style when clicked</div>
-        </section>
-        
-        <section class="content-section">
-            <button id="toggle-element">Toggle Element</button>
+            <div class="controls">
+                <button id="text-changer">Change Text</button>
+                <button id="style-changer">Change Style</button>
+                <button id="toggle-element">Toggle Element</button>
+                <button id="animate-box">Start Animation</button>
+                <button id="load-image">Load Random Image</button>
+            </div>
+            
+            <p id="changeable-text">This text will change when you click the button above.</p>
+            
+            <div id="style-demo" class="box">Click me to change my style!</div>
+            
             <div id="element-to-toggle" class="box visible">
                 This element will appear/disappear when you click the toggle button
             </div>
+            
+            <div class="image-container">
+                <img id="dynamic-image" class="animated-image" src="" alt="Dynamic image">
+            </div>
         </section>
     </main>
-    
-    <footer>
-        <p>DOM Manipulation Exercise</p>
-    </footer>
     
     <script src="script.js"></script>
 </body>
